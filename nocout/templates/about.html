@@ -1,0 +1,421 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>About Us</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">About Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+        
+
+<!-- About Start -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img" data-parallax="scroll" 
+                data-image-src="{% static 'img/about us.jpg' %}">
+            <!-- <img src=""> -->
+            </div>
+            
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>About Us</p>
+                    <h2>Let’s judge a book by its cover. Why not?</h2>
+                </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-2">Our Philosophy</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            We’re a bunch of creative folks with research and development background.
+                            We specialise in creating communications that are extremely creative,
+                            engaging and that will leavea stunning impact on the target groups.
+                        </div>
+                        <div id="tab-content-2" class="container tab-pane fade">
+                            At the intersection of creativity and innovation, we, 
+                            a team with diverse research and development expertise, 
+                            craft impactful communications. We specialize in creating compelling, 
+                            engaging narratives that resonate profoundly with our target audiences. 
+                            Our philosophy is rooted in the belief that creative excellence, 
+                            coupled with strategic thinking, has the power to leave an indelible 
+                            mark on the hearts and minds of our audience. We are driven by the passion to 
+                            innovate, captivate, and exceed expectations in every endeavor, 
+                            ensuring our clients' stories are not just heard but are remembered
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About End -->
+        
+ 
+<!-- Facts Start -->
+<div class="facts" data-parallax="scroll" data-image-src="{% static 'img/number animation page.jpg' %}">
+    <!-- "{% static 'img/img4.jpg' %}"  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-home"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-plus" data-toggle="counter-up">150</h3>
+                        <p>Clint</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-charity"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-plus" data-toggle="counter-up">400</h3>
+                        <p>Shoot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-kindness"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-dollar" data-toggle="counter-up">10000</h3>
+                        <p>Worth</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-donation"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-dollar" data-toggle="counter-up">5000</h3>
+                        <p>Our Goal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Facts End -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">            
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>Let's Meet Our Founder</p>
+                    <h2>Dreamer. Creator. Unleashing stories that redefine possibilities</h2>
+                </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">Manish Jha</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            A FTII Pune trained Film editor, with 12 years of experience in producing videos, 
+                            Marketing campaigns and Branding activities. I believe that creativity can be acquired by certain practices of observation from day-to-day life. 
+                            Bringing those observations into the process of story-telling and improvising those stories in the wau audience relate to it.
+                            <br></br>
+                            My plan and objectives are to work and contribute towards the direct growth of an
+                            organization and Create Graphics and videos that are recognized as benchmarks
+                            outside the workplace. I aim to create some viral advertisements that remain a
+                            creative masterpiece in people’s memory for some time. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img" data-parallax="scroll" 
+                data-image-src="{% static 'img/profile.jpg' %}">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Team Start -->
+<!-- <div class="team">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Meet Our Team</p>
+            <h2>Awesome guys that make ypur dream successfully </h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-1.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>Donald John</h2>
+                        <p>Founder & CEO</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-2.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>Adam Phillips</h2>
+                        <p>Chef Executive</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-3.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>Thomas Olsen</h2>
+                        <p>Chef Advisor</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-2.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>James Alien</h2>
+                        <p>Advisor</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Team End -->
+  
+ 
+<!-- Testimonial Start -->
+<!-- <div class="testimonial">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Testimonial</p>
+            <h2>What people are talking about our service</h2>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-1.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-2.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-3.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-4.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Testimonial End -->
+
+{%endblock%}
+{% block js%}
+        <!-- JavaScript Libraries -->
+        <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet"> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+        
+        <!-- Contact Javascript File -->
+        <!-- <script src="mail/jqBootstrapValidation.min.js"></script> -->
+        <!-- <script src="mail/contact.js"></script> -->
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var menubtn = document.getElementById("sidenav")
+            var menubtn = document.getElementById("menu")
+            sidenav.style.right= "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right== "-250px"){
+                    sidenav.style.right ="0";
+                    menu.src = "{% static 'img/close.png' %}";
+                }
+                else{
+                    sidenav.style.right ="-250px"; 
+                    menu.src = "{% static 'img/menu.png' %}";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+        	speed: 500,
+        	speedAsDuration: true
+            });
+        </script>
+
+{% endblock%}
+
+{% block footer%}
+<!-- Footer Start -->
+<div class="footer">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-contact">
+                <h2>Our Head Office</h2>
+                <p><i class="fa fa-map-marker-alt"></i>Location, City, Country</p>
+                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                <div class="footer-social">
+                    <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-custom" href="https://facebook.com/freewebsitecode"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-custom" href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-link">
+                <h2>Popular Links</h2>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Popular Causes</a>
+                <a href="">Upcoming Events</a>
+                <a href="">Latest Blog</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-link">
+                <h2>Useful Links</h2>
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-newsletter">
+                <h2>Newsletter</h2>
+                <form>
+                    <input class="form-control" placeholder="Email goes here">
+                    <button class="btn btn-custom">Submit</button>
+                    <label>Don't worry, we don't spam!</label>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container copyright">
+    <div class="row">
+        <div class="col-md-6">
+            <p>&copy; <a href="https://freewebsitecode.com">fiboseq</a>, All Right Reserved.</p>
+        </div>
+        <div class="col-md-6">
+            <p>Designed By <a href="">Creative coders</a></p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+<div class="loader"></div>
+</div>
+{% endblock%}

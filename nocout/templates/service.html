@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Page Header Start -->
+<div class="page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Our Services</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Service</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Page Header End -->
+
+<!-- Service Start -->
+<div class="service">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Our Services</p>
+            <h2>When you enter into a new line of business your brand should be fundamentally strong</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Brand Strategy</h3>
+                        <p>Crafting compelling brand stories. Elevating your identity with strategic insights. Building connections that resonate and leave a lasting impact</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Brand Design</h3>
+                        <p>Transforming visions into visual identity. Distinctive brand design that communicates your essence and captivates your audience effortlessly</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Performance Marketing</h3>
+                        <p>Maximize online reach. Precision-targeted campaigns. Data-driven strategies for optimal ROI. Elevate your brand through effective and measurable performance marketing solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <!-- <div class="service-icon">
+                        <i class="flaticon-education"></i>
+                    </div> -->
+                    <div class="service-text">
+                        <h3>Creative Campaigns</h3>
+                        <p>Inspired storytelling. Bold creativity. Unleash unforgettable campaigns that captivate hearts and minds. Elevate your brand with our imaginative and impactful approach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <!-- <div class="service-icon">
+                        <i class="flaticon-home"></i>
+                    </div> -->
+                    <div class="service-text">
+                        <h3>Video Production</h3>
+                        <p>Cinematic storytelling. Dynamic visuals. Bring your brand to life with our expert video production. Engage, inspire, and leave a lasting impression</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <!-- <div class="service-icon">
+                        <i class="flaticon-social-care"></i>
+                    </div> -->
+                    <div class="service-text">
+                        <h3>Brand Extensions.</h3>
+                        <p>Diversify your brand. Expand with confidence. Strategic brand extensions that resonate, enriching your presence and creating new avenues for growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Service End -->
+      
+ {%endblock%}
+ {% block js%}
+         <!-- JavaScript Libraries -->
+         <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet"> -->
+         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+         <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+         <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+         <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+         <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+         <script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+         
+         <!-- Contact Javascript File -->
+         <!-- <script src="mail/jqBootstrapValidation.min.js"></script> -->
+         <!-- <script src="mail/contact.js"></script> -->
+ 
+         <!-- Template Javascript -->
+         <script src="{% static 'js/main.js' %}"></script>
+         <script>
+             var menubtn = document.getElementById("menubtn")
+             var menubtn = document.getElementById("sidenav")
+             var menubtn = document.getElementById("menu")
+             sidenav.style.right= "-250px";
+             menubtn.onclick = function(){
+                 if(sidenav.style.right== "-250px"){
+                     sidenav.style.right ="0";
+                     menu.src = "{% static 'img/close.png' %}";
+                 }
+                 else{
+                     sidenav.style.right ="-250px"; 
+                     menu.src = "{% static 'img/menu.png' %}";
+                 }
+             }
+             var scroll = new SmoothScroll('a[href*="#"]', {
+             speed: 500,
+             speedAsDuration: true
+             });
+         </script>
+ 
+ {% endblock%}
+ 
+ {% block footer%}
+ <!-- Footer Start -->
+ <div class="footer">
+ <div class="container">
+     <div class="row">
+         <div class="col-lg-3 col-md-6">
+             <div class="footer-contact">
+                 <h2>Our Head Office</h2>
+                 <p><i class="fa fa-map-marker-alt"></i>Location, City, Country</p>
+                 <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                 <p><i class="fa fa-envelope"></i>info@example.com</p>
+                 <div class="footer-social">
+                     <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-twitter"></i></a>
+                     <a class="btn btn-custom" href="https://facebook.com/freewebsitecode"><i class="fab fa-facebook-f"></i></a>
+                     <a class="btn btn-custom" href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a>
+                     <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-instagram"></i></a>
+                     <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-linkedin-in"></i></a>
+                 </div>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-6">
+             <div class="footer-link">
+                 <h2>Popular Links</h2>
+                 <a href="">About Us</a>
+                 <a href="">Contact Us</a>
+                 <a href="">Popular Causes</a>
+                 <a href="">Upcoming Events</a>
+                 <a href="">Latest Blog</a>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-6">
+             <div class="footer-link">
+                 <h2>Useful Links</h2>
+                 <a href="">Terms of use</a>
+                 <a href="">Privacy policy</a>
+                 <a href="">Cookies</a>
+                 <a href="">Help</a>
+                 <a href="">FQAs</a>
+             </div>
+         </div>
+         <div class="col-lg-3 col-md-6">
+             <div class="footer-newsletter">
+                 <h2>Newsletter</h2>
+                 <form>
+                     <input class="form-control" placeholder="Email goes here">
+                     <button class="btn btn-custom">Submit</button>
+                     <label>Don't worry, we don't spam!</label>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+ <div class="container copyright">
+     <div class="row">
+         <div class="col-md-6">
+             <p>&copy; <a href="https://freewebsitecode.com">fiboseq</a>, All Right Reserved.</p>
+         </div>
+         <div class="col-md-6">
+             <p>Designed By <a href="">Creative coders</a></p>
+         </div>
+     </div>
+ </div>
+ </div>
+ <!-- Footer End -->
+ 
+ 
+ <!-- Back to top button -->
+ <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+ 
+ <!-- Pre Loader -->
+ <div id="loader" class="show">
+ <div class="loader"></div>
+ </div>
+ {% endblock%}

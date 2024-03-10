@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>fiboseq</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Brand management Company" name="keywords">
+        <meta content="none" name="description">
+
+        <!-- Favicon -->
+        <!-- <link href="{% static 'img/favicon.ico' %}" rel="icon"> -->
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="{% static 'lib/flaticon/font/flaticon.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/animate/animate.min.css' %}" rel="stylesheet">
+        <link href="{% static 'lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+        <!-- Template Stylesheet -->
+        <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Top Bar Start -->
+        <div class="top-bar d-none d-md-block">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8">
+                        <!-- <div class="top-bar-left">
+                            <div class="text">
+                                <i class="fa fa-phone-alt"></i>
+                                <p>+91 78271 25556</p>
+                            </div>
+                            <div class="text">
+                                <i class="fa fa-envelope"></i>
+                                <p>info@fiboseq.com</p>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="col-md-4">
+                        <div class="top-bar-right">
+                            <div class="top-bar-left">
+                            <div class="text">
+                                <i class="fa fa-phone-alt"></i>
+                                <p>+91 78271 25556</p>
+                            </div>
+                            <div class="text">
+                                <i class="fa fa-envelope"></i>
+                                <p>info@fiboseq.com</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start -->
+        <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand"><img src="{% static 'img/logo_final DESIGN.png' %}" alt="Image"></a>
+                <!-- <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+
+                <!-- <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="causes.html" class="nav-item nav-link">Work</a>
+                        <a href="event.html" class="nav-item nav-link">Founder</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    </div>
+                </div> -->
+                <div id="sidenav">
+                    <nav>
+                        <ul>
+                            <li><a href="{% url 'index' %}"> HOME</a></li>
+                            <li><a href="{% url 'about' %}"> ABOUT</a></li>
+                            <li><a href="{% url 'service' %}"> SERVICES</a></li>
+                            <li><a href="{% url 'team' %}"> OUR TEAM</a></li>
+                            <li><a href="{% url 'testimonials'%}"> TESTIMONIALS</a></li>
+                            <li><a href="{% url 'contact' %}"> CONTECT US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="menubtn">
+                    <i id="menu" class="fa fa-list" aria-hidden="true"></i>
+                    <!-- <img src="{% static 'img/menu.png' %}" id="menu"> -->
+                </div>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+
+        {% block content %}
+        {% endblock %}
+
+        {% block footer%}
+        {% endblock%}
+
+        {% block js%}
+        {% endblock%}
+    </body>
+</html>

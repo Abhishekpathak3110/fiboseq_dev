@@ -1,0 +1,640 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Carousel Start -->
+<div class="carousel">
+    <div class="container-fluid">
+        <div class="owl-carousel">
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="{% static 'img/Home page banner_1 copy.jpg' %}" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>A Brand Design Company</h1>
+                    <p>
+                        We ensure your creative needs are met in a quick, effective and hassle free way.
+                    </p>
+                    <!-- <div class="carousel-btn">
+                        <a class="btn btn-custom" href="">Donate Now</a>
+                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="{% static 'img/Home page banner_2 copy.jpg' %}" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>A Brand Management Creative Company</h1>
+                    <p>
+                        We ensure your creative needs are met in a quick, effective and hassle free way.
+                        all you have to do is to ensure you have enough work to pass on
+                    </p>
+                    <!-- <div class="carousel-btn">
+                        <a class="btn btn-custom" href="">Donate Now</a>
+                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                    </div> -->
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-img">
+                    <img src="{% static 'img/Home page banner_3 copy.jpg' %}" alt="Image">
+                </div>
+                <div class="carousel-text">
+                    <h1>Creative Company</h1>
+                    <p>
+                        We ensure your creative needs are met in a quick, effective and hassle free way.
+                        all you have to do is to ensure you have enough work to pass on
+                    </p>
+                    <!-- <div class="carousel-btn">
+                        <a class="btn btn-custom" href="">Donate Now</a>
+                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Carousel End -->
+
+<!-- Video Modal Start-->
+<div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>        
+                <!-- 16:9 aspect ratio -->
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- Video Modal End -->
+        
+
+<!-- About Start -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div class="about-img" data-parallax="scroll" 
+                data-image-src="{% static 'img/about us.jpg' %}">
+            <!-- <img src=""> -->
+            </div>
+            
+            </div>
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>About Us</p>
+                    <h2>Let’s judge a book by its cover. Why not?</h2>
+                </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-2">Our Philosophy</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            We’re a bunch of creative folks with research and development background.
+                            We specialise in creating communications that are extremely creative,
+                            engaging and that will leavea stunning impact on the target groups.
+                        </div>
+                        <div id="tab-content-2" class="container tab-pane fade">
+                            At the intersection of creativity and innovation, we, a team with diverse research and development expertise, craft impactful communications. We specialize in creating compelling, engaging narratives that resonate profoundly with our target audiences. Our philosophy is rooted in the belief that creative excellence, coupled with strategic thinking, has the power to leave an indelible mark on the hearts and minds of our audience. We are driven by the passion to innovate, captivate, and exceed expectations in every endeavor, ensuring our clients' stories are not just heard but are remembered
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+
+
+<!-- Service Start -->
+<div class="service">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Our Services</p>
+            <h2>When you enter into a new line of business your brand should be fundamentally strong</h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Brand Strategy</h3>
+                        <p>Crafting compelling brand stories. Elevating your identity with strategic insights. Building connections that resonate and leave a lasting impact</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Brand Design</h3>
+                        <p>Transforming visions into visual identity. Distinctive brand design that communicates your essence and captivates your audience effortlessly</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <div class="service-text">
+                        <h3>Performance Marketing</h3>
+                        <p>Maximize online reach. Precision-targeted campaigns. Data-driven strategies for optimal ROI. Elevate your brand through effective and measurable performance marketing solutions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <!-- <div class="service-icon">
+                        <i class="flaticon-education"></i>
+                    </div> -->
+                    <div class="service-text">
+                        <h3>Creative Campaigns</h3>
+                        <p>Inspired storytelling. Bold creativity. Unleash unforgettable campaigns that captivate hearts and minds. Elevate your brand with our imaginative and impactful approach</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <!-- <div class="service-icon">
+                        <i class="flaticon-home"></i>
+                    </div> -->
+                    <div class="service-text">
+                        <h3>Video Production</h3>
+                        <p>Cinematic storytelling. Dynamic visuals. Bring your brand to life with our expert video production. Engage, inspire, and leave a lasting impression</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item">
+                    <!-- <div class="service-icon">
+                        <i class="flaticon-social-care"></i>
+                    </div> -->
+                    <div class="service-text">
+                        <h3>Brand Extensions.</h3>
+                        <p>Diversify your brand. Expand with confidence. Strategic brand extensions that resonate, enriching your presence and creating new avenues for growth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- Service End -->
+        
+
+<!-- Facts Start -->
+<div class="facts" data-parallax="scroll" data-image-src="{% static 'img/number animation page.jpg' %}">
+    <!-- "{% static 'img/img4.jpg' %}"  -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-home"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-plus" data-toggle="counter-up">150</h3>
+                        <p>Clint</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-charity"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-plus" data-toggle="counter-up">400</h3>
+                        <p>Shoot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-kindness"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-dollar" data-toggle="counter-up">10000</h3>
+                        <p>Worth</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="facts-item">
+                    <i class="flaticon-donation"></i>
+                    <div class="facts-text">
+                        <h3 class="facts-dollar" data-toggle="counter-up">5000</h3>
+                        <p>Our Goal</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Facts End -->
+
+        
+<!-- our clint -->
+
+<!-- <div class="container pt-5">
+    <div class="section-header text-center">
+        <p>Our Clint</p>
+        <h2>Let's know about our Clint</h2>
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <div class="course-text pt-5">
+            <h3> Enroll in Our Top Courses</h3>
+            <hr>
+            <p style="text-align: justify;"> Motivation refers to the psychological processes that lead us to do certain things.
+             Common-sense views of motivation tend to see it as a single factor that we can have
+             more or less of, and which energise what people do. Many ideas about the role and importance 
+             of motivation in education tend to portray it as a form of personal quality, which can directly
+             affect learning
+            </p>
+            
+        </div>
+      </div>    
+      <div class="col-sm">
+        <img src="{% static 'img/causes-5.jpg' %}" class="img-fluid" alt="...">
+        
+      </div>
+     
+    </div>
+</div> -->
+
+<!-- founder  -->
+<div class="about">
+    <div class="container">
+        <div class="row align-items-center">            
+            <div class="col-lg-6">
+                <div class="section-header">
+                    <p>Let's Meet Our Founder</p>
+                    <h2>Dreamer. Creator. Unleashing stories that redefine possibilities</h2>
+                </div>
+                <div class="about-tab">
+                    <ul class="nav nav-pills nav-justified">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">Manish Jha</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-content-1" class="container tab-pane active">
+                            A FTII Pune trained Film editor, with 12 years of experience in producing videos, 
+                            Marketing campaigns and Branding activities. I believe that creativity can be acquired by certain practices of observation from day-to-day life. 
+                            Bringing those observations into the process of story-telling and improvising those stories in the wau audience relate to it.
+                            <br></br>
+                            My plan and objectives are to work and contribute towards the direct growth of an
+                            organization and Create Graphics and videos that are recognized as benchmarks
+                            outside the workplace. I aim to create some viral advertisements that remain a
+                            creative masterpiece in people’s memory for some time. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="about-img" data-parallax="scroll" 
+                data-image-src="{% static 'img/profile.jpg' %}">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Team Start -->
+<!-- <div class="team">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Meet Our Team</p>
+            <h2>Awesome guys that make ypur dream successfully </h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-1.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>Donald John</h2>
+                        <p>Founder & CEO</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-2.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>Adam Phillips</h2>
+                        <p>Chef Executive</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-3.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>Thomas Olsen</h2>
+                        <p>Chef Advisor</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <div class="team-item">
+                    <div class="team-img">
+                        <img src="{% static 'img/team-2.jpg' %}" alt="Team Image">
+                    </div>
+                    <div class="team-text">
+                        <h2>James Alien</h2>
+                        <p>Advisor</p>
+                        <div class="team-social">
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- Team End -->
+
+
+<!-- notice board -->
+<div class="volunteer" data-parallax="scroll" data-image-src="{% static 'img/notice-board.png' %}">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7">
+                <div class="volunteer-content">
+                    <div class="section-header">
+                        <p>How we Help you ?</p>
+                        <h2>Let’s make a difference </h2>
+                    </div>
+                    <div class="volunteer-text">
+                        <p>
+                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Volunteer End -->
+
+
+<!-- Testimonial Start -->
+<!-- <div class="testimonial">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Testimonial</p>
+            <h2>What people are talking about our service</h2>
+        </div>
+        <div class="owl-carousel testimonials-carousel">
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-1.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-2.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-3.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="testimonial-profile">
+                    <img src="{% static 'img/testimonial-4.jpg' %}" alt="Image">
+                    <div class="testimonial-name">
+                        <h3>Person Name</h3>
+                        <p>Profession</p>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p>
+                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor, auctor id gravid vivera quis
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+Testimonial End -->
+
+
+<!-- Contact Start -->
+<div class="contact">
+    <div class="container">
+        <div class="section-header text-center">
+            <p>Get In Touch</p>
+            <h2>Contact for any query</h2>
+        </div>
+        <div class="contact-img">
+            <img src="{% static 'img/contact_us.jpg' %}" alt="Image">
+        </div>
+        <div class="contact-form">
+                <div id="success"></div>
+                <form name="sentMessage" id="contactForm" novalidate="novalidate" method="POST" action="">
+                    {% csrf_token%}
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="required" data-validation-required-message="Please enter your name" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required="required" data-validation-required-message="Please enter your email" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required="required" data-validation-required-message="Please enter a subject" />
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div class="control-group">
+                        <textarea class="form-control" id="message" name="message" placeholder="Message" required="required" data-validation-required-message="Please enter your message"></textarea>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                    <div>
+                        <button class="btn btn-custom" type="submit" id="sendMessageButton" value="submit">Send Message</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+</div>
+<!-- Contact End -->
+
+
+      
+{%endblock%}
+{% block js%}
+        <!-- JavaScript Libraries -->
+        <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet"> -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="{% static 'lib/easing/easing.min.js' %}"></script>
+        <script src="{% static 'lib/owlcarousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'lib/waypoints/waypoints.min.js' %}"></script>
+        <script src="{% static 'lib/counterup/counterup.min.js' %}"></script>
+        <script src="{% static 'lib/parallax/parallax.min.js' %}"></script>
+        
+        <!-- Contact Javascript File -->
+        <!-- <script src="mail/jqBootstrapValidation.min.js"></script> -->
+        <!-- <script src="mail/contact.js"></script> -->
+
+        <!-- Template Javascript -->
+        <script src="{% static 'js/main.js' %}"></script>
+        <script>
+            var menubtn = document.getElementById("menubtn")
+            var menubtn = document.getElementById("sidenav")
+            var menubtn = document.getElementById("menu")
+            sidenav.style.right= "-250px";
+            menubtn.onclick = function(){
+                if(sidenav.style.right== "-250px"){
+                    sidenav.style.right ="0";
+                    menu.src = "{% static 'img/close.png' %}";
+                }
+                else{
+                    sidenav.style.right ="-250px"; 
+                    menu.src = "{% static 'img/menu.png' %}";
+                }
+            }
+            var scroll = new SmoothScroll('a[href*="#"]', {
+        	speed: 500,
+        	speedAsDuration: true
+            });
+        </script>
+
+{% endblock%}
+
+{% block footer%}
+<!-- Footer Start -->
+<div class="footer">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-contact">
+                <h2>Our Head Office</h2>
+                <p><i class="fa fa-map-marker-alt"></i>Location, City, Country</p>
+                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                <div class="footer-social">
+                    <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-custom" href="https://facebook.com/freewebsitecode"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-custom" href="https://www.youtube.com/channel/UC9HlQRmKgG3jeVD_fBxj1Pw/videos"><i class="fab fa-youtube"></i></a>
+                    <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-custom" href="https://freewebsitecode.com"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-link">
+                <h2>Popular Links</h2>
+                <a href="">About Us</a>
+                <a href="">Contact Us</a>
+                <a href="">Popular Causes</a>
+                <a href="">Upcoming Events</a>
+                <a href="">Latest Blog</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-link">
+                <h2>Useful Links</h2>
+                <a href="">Terms of use</a>
+                <a href="">Privacy policy</a>
+                <a href="">Cookies</a>
+                <a href="">Help</a>
+                <a href="">FQAs</a>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+            <div class="footer-newsletter">
+                <h2>Newsletter</h2>
+                <form>
+                    <input class="form-control" placeholder="Email goes here">
+                    <button class="btn btn-custom">Submit</button>
+                    <label>Don't worry, we don't spam!</label>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container copyright">
+    <div class="row">
+        <div class="col-md-6">
+            <p>&copy; <a href="https://freewebsitecode.com">fiboseq</a>, All Right Reserved.</p>
+        </div>
+        <div class="col-md-6">
+            <p>Designed By <a href="">Creative coders</a></p>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Footer End -->
+
+
+<!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+<div class="loader"></div>
+</div>
+{% endblock%}
